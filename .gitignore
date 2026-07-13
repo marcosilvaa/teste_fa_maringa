@@ -1,2 +1,9 @@
 .venv/
 data/*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/cache/
+.ipynb_checkpoints/
+.DS_Store
+data/processed/
