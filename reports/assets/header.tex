@@ -1,0 +1,26 @@
+% Cabeçalho LaTeX para os relatórios F.A. Maringá
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{pdflscape}   % paisagem que funciona em PDF
+\usepackage{lscape}
+
+% Hifenização adequada para português
+\usepackage{polyglossia}
+\setdefaultlanguage{portuguese}
+
+% Evitar linhas órfãs/viúvas e títulos isolados no fim da página
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Separar títulos do conteúdo seguinte (KOMA nativo)
+\RedeclareSectionCommands[
+  beforeskip=1.0\baselineskip,
+  afterskip=0.5\baselineskip
+]{section,subsection,subsubsection}
+
+% Tabelas: repetir cabeçalho em quebras e permitir largura ajustada
+\renewcommand{\arraystretch}{1.15}

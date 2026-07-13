@@ -1,0 +1,50 @@
+project:
+  type: default
+  title: "Relatórios F.A. Maringá"
+  output-dir: reports/pdf
+
+lang: pt-BR
+language:
+  pt-BR:
+    toc-title: "Sumário"
+
+format:
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+    margin-left: 2.2cm
+    margin-right: 2.2cm
+    margin-top: 2.4cm
+    margin-bottom: 2.4cm
+    fontsize: 10.5pt
+    geometry:
+      - bindingoffset=0cm
+    toc: true
+    toc-depth: 2
+    secnum-depth: 3
+    number-sections: true
+    lof: false
+    lot: false
+    linkcolor: "DarkBlue"
+    urlcolor: "DarkBlue"
+    citecolor: "DarkBlue"
+    colorlinks: true
+    fig-align: center
+    fig-pos: "H"
+    tbl-cap-location: "top"
+    fig-width: 6.5
+    fig-height: 4.2
+    fig-dpi: 150
+    pdf-engine: xelatex
+    include-in-header: reports/assets/header.tex
+    pagestyle: plain
+
+filters:
+  - reports/scripts/table_format.lua
+
+execute:
+  enabled: false
+  echo: false
+  warning: false
+  error: false
+  message: false
