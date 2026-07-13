@@ -1,0 +1,142 @@
+:root {
+  --paper: #f6f3ec;
+  --surface: #ffffff;
+  --navy: #17324d;
+  --ink: #243444;
+  --muted: #6b7a88;
+  --line: #dce2e7;
+  --green: #16856b;
+  --amber: #c78a2c;
+  --red: #b8473d;
+}
+
+.stApp {
+  background:
+    radial-gradient(circle at 95% 0%, rgba(23, 50, 77, 0.07), transparent 30rem),
+    var(--paper);
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+[data-testid="stSidebar"] {
+  background: #eef1f2;
+  border-right: 1px solid var(--line);
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+  color: var(--navy);
+}
+
+.block-container {
+  max-width: 1480px;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.page-hero {
+  border-top: 4px solid var(--navy);
+  border-bottom: 1px solid var(--line);
+  padding: 1.15rem 0 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-hero h1 {
+  color: var(--navy);
+  font-family: Charter, Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0.25rem 0 0.7rem;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0;
+  max-width: 880px;
+}
+
+.section-title {
+  color: var(--navy);
+  font-family: Charter, Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin: 2rem 0 0.25rem;
+}
+
+[data-testid="stMetric"] {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  min-height: 118px;
+  padding: 1rem 1.05rem;
+}
+
+[data-testid="stMetricLabel"] {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+  color: var(--navy);
+  font-family: Charter, Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 1.9rem);
+}
+
+[data-testid="stDataFrame"],
+[data-testid="stPlotlyChart"] {
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0.3rem;
+}
+
+.highlight-card {
+  background: #fff;
+  border-left: 4px solid var(--green);
+  border-radius: 4px;
+  min-height: 120px;
+  padding: 1rem 1.1rem;
+}
+
+.highlight-card strong {
+  color: var(--navy);
+  display: block;
+  font-family: Charter, Georgia, serif;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.highlight-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .block-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.15rem;
+  }
+
+  [data-testid="stMetric"] {
+    min-height: 96px;
+  }
+}
